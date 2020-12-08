@@ -57,10 +57,9 @@ const Header = () => {
 
   const list = (anchor) => (
        <div
-        className={clsx(classes.list, {
+        className={clsx(classes.list, classes.background, {
           [classes.fullList]: anchor === 'top' || anchor === 'bottom',
         })}
-        className={classes.background}
         role="presentation"
         onClick={toggleDrawer(anchor, false)}
         onKeyDown={toggleDrawer(anchor, false)}
