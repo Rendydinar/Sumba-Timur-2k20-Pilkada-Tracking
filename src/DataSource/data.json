@@ -1,0 +1,89 @@
+{
+  "perkecamatan": [
+    {
+      "name": "Kambera", "sehati": 4000, "kobul": 2400
+    },
+    {
+      "name": "Kota Waingapu", "sehati": 4000, "kobul": 2400
+    },
+    {
+      "name": "Haharu", "sehati": 4000, "kobul": 2400
+    },
+    {
+      "name": "Lewa", "sehati": 4000, "kobul": 2400
+    },
+    {
+      "name": "Nggaha Ori Angu", "sehati": 4000, "kobul": 2400
+    },
+    {
+      "name": "Tabundung", "sehati": 4000, "kobul": 2400
+    },
+    {
+      "name": "Pinu Pahar", "sehati": 4000, "kobul": 2400
+    },
+    {
+      "name": "Pandawai", "sehati": 4000, "kobul": 2400
+    },
+    {
+      "name": "Umalulu", "sehati": 4000, "kobul": 2400
+    },
+    {
+      "name": "Rindi", "sehati": 4000, "kobul": 2400
+    },
+    {
+      "name": "Pahunga Lodu", "sehati": 4000, "kobul": 2400
+    },
+    {
+      "name": "Wulla Waijelu", "sehati": 4000, "kobul": 2400
+    },
+    {
+      "name": "Paberiwai", "sehati": 4000, "kobul": 2400
+    },
+    {
+      "name": "Karera", "sehati": 4000, "kobul": 2400
+    },
+    {
+      "name": "Kahaungu Eti", "sehati": 4000, "kobul": 2400
+    },
+    {
+      "name": "Matawai La Pawu", "sehati": 4000, "kobul": 2400
+    },
+    {
+      "name": "Kambata Mapambuhang", "sehati": 4000, "kobul": 2400
+    },
+    {
+      "name": "Lewa Tidahu", "sehati": 4000, "kobul": 2400
+    },
+    {
+      "name": "Katala Hamu Lingu", "sehati": 4000, "kobul": 2400
+    },
+    {
+      "name": "Kanatang", "sehati": 4000, "kobul": 2400
+    },
+    {
+      "name": "Ngadu Ngala", "sehati": 4000, "kobul": 2400
+    },
+    {
+      "name": "Mahu", "sehati": 4000, "kobul": 2400
+    }
+  ],
+  "totalPie" : [
+    { 
+      "name": "Sehati", 
+      "value": 75000 
+    },
+    { "name": "Kobul", 
+      "value": 60000 
+    }
+  ],  
+  "totalBartChart": [
+    {
+      "name": "Total Suara", 
+      "Sehati": 4000, 
+      "Kobul": 2400
+    }
+  ],
+  "terkahirUpdate": {
+    "date": "Rabu 10:10 Am - WITA"
+  }
+}

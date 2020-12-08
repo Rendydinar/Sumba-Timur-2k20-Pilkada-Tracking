@@ -1,0 +1,46 @@
+.fontVS {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.marginLeft {
+	margin-left: 4000px !important;
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+
+.fontVS {
+  position: relative;
+  right: 50px;
+  font-weight: bold;
+  font-size: 2rem;
+  top: 200px;
+}
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+
+.fontVS {
+  position: relative;
+  right: 50px;
+  font-weight: bold;
+  font-size: 2rem;
+  top: 200px;
+}
+
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+.fontVS {
+  position: relative;
+  right: 50px;
+  font-weight: bold;
+  font-size: 2rem;
+  top: 200px;
+}
+
+}

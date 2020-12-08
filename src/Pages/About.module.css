@@ -1,0 +1,6 @@
+.imgReponsive {
+	width: 350px;
+	height: 350px;
+	object-position: center;
+	object-fit: cover;
+}
