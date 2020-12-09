@@ -2,7 +2,7 @@
   animation: blink-animation 1s steps(5, start) infinite;
   -webkit-animation: blink-animation 1s steps(5, start) infinite;
   margin-right: 10px;
-  font-size: 1.1rem;
+  font-size: 1rem;
 
 }
 @keyframes blink-animation {
