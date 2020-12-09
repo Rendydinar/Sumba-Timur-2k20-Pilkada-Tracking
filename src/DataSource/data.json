@@ -28,7 +28,7 @@
       "name": "Umalulu", "sehati": 0, "kobul": 0
     },
     {
-      "name": "Rindi", "sehati": 0, "kobul": 0
+      "name": "Rindi", "sehati": 1974, "kobul": 3963
     },
     {
       "name": "Pahunga Lodu", "sehati": 0, "kobul": 0
@@ -70,17 +70,17 @@
   "totalPie" : [
     { 
       "name": "Sehati", 
-      "value": 814
+      "value": ,2788
     },
     { "name": "Kobul", 
-      "value": 519
+      "value": 4482
     }
   ],  
   "totalBartChart": [
     {
       "name": "Total Suara", 
-      "Sehati": 814, 
-      "Kobul": 519
+      "Sehati": 2788, 
+      "Kobul": 4482
     }
   ],
   "terkahirUpdate": {
