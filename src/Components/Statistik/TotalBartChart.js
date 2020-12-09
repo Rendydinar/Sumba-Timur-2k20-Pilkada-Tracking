@@ -10,8 +10,8 @@ const TotalBartChart = () => {
     <center className={classes.section}>
       <h4>Total Suara Seluruhnya</h4>
       <BarChart
-        width={470}
-        height={300}
+        width={380}
+        height={380}
         data={DataSource.totalBartChart}
         margin={{
           top: 5, right: 30, bottom: 5,
@@ -22,7 +22,7 @@ const TotalBartChart = () => {
         <YAxis />
         <Tooltip />
         <Legend />
-        <Bar dataKey="Sehati" fill="#0000FF" />
+        <Bar dataKey="Sehati" fill="#FF0000" />
         <Bar dataKey="Kobul" fill="#FFFF00" />
       </BarChart>
     </center>

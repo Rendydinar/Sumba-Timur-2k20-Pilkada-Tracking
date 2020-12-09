@@ -10,16 +10,13 @@ const Landing = () => {
 	        PILKADA SUMBA TIMUR 2k20 TRACKING
 	      </p>
 	      <p className={classes.fontH5}>
-	        body1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-	        unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam
-	        dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.
+	      	Ayo Bersama Kita Kawal Pemilihan Bupati Sumba Timur Rabu 9 Desember 2020. Jangan Sampai Kamu Salah Pilih Seorang Yang Akan Memimpin Kota Tercinta-Mu Selama 2021-2026.
       	 </p>
 	  	</div>
 	  </div>
   	  <p className={classes.fontSection}>
   	    Ayo Bersama Sukseskan PILKADA Sumba Timur 2020
   	  </p>
-  	  <hr />
 	</div>
   )
 }

@@ -1,8 +1,9 @@
 .blink {
   animation: blink-animation 1s steps(5, start) infinite;
   -webkit-animation: blink-animation 1s steps(5, start) infinite;
-  margin-right: 20px;
-  font-size: 1.4rem;
+  margin-right: 10px;
+  font-size: 1.1rem;
+
 }
 @keyframes blink-animation {
   to {
@@ -13,4 +14,33 @@
   to {
     visibility: hidden;
   }
+}
+
+.textHidden {
+  display: none;
+  flex-grow: 1;
+}
+
+/*Extra large devices (large desktops; 1200px and up)*/
+@media (min-width: 1200px) { 
+.textHidden {
+  display: inline;
+  flex-grow: 1;
+}
+}
+
+/*Large devices (desktops; 992px and up)*/
+@media (min-width: 992px) { 
+.textHidden {
+  display: inline;
+  flex-grow: 1;
+}
+}
+
+/*Medium devices (tablets; 768px and up)*/
+@media (min-width: 768px) { 
+.textHidden {
+  display: inline;
+  flex-grow: 1;
+}
 }

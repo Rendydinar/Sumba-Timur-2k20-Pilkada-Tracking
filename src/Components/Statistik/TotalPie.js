@@ -5,7 +5,7 @@ import {
 import classes from './Statistik.module.css';
 import DataSource from '../../DataSource/data';
 
-const COLORS = ['#0000FF', '#FFFF00'];
+const COLORS = ['#FF0000', '#FFFF00'];
 
 const RADIAN = Math.PI / 180;
 const renderCustomizedLabel = ({
@@ -33,7 +33,7 @@ const TotalPie = () => {
           cy={200}
           labelLine={false}
           label={renderCustomizedLabel}
-          outerRadius={140}
+          outerRadius={100}
           fill="#8884d8"
           dataKey="value"
         >
@@ -43,7 +43,7 @@ const TotalPie = () => {
         </Pie>
       </PieChart>
         <ul style={{  listStyle: 'none', fontWeight: 'bold', marginButtom: '50px'}}>
-          <li style={{color: '#0000FF'}}><span>Sehati:</span> {DataSource.totalPie[0].value} Suara</li>
+          <li style={{color: '#FF0000'}}><span>Sehati:</span> {DataSource.totalPie[0].value} Suara</li>
           <li style={{color: '#FFFF00'}}><span>Kobul:</span> {DataSource.totalPie[1].value} Suara</li>
         </ul>
     </center>

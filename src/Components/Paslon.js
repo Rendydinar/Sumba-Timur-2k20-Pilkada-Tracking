@@ -27,10 +27,13 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import ListSubheader from '@material-ui/core/ListSubheader';
+import HighlightOffIcon from '@material-ui/icons/HighlightOff';
+import ListIcon from '@material-ui/icons/List';
+import WbIncandescentIcon from '@material-ui/icons/WbIncandescent';
+import EventIcon from '@material-ui/icons/Event';
 
 // Logo Partai
 import PartaiPDIP from '../static/logo-pdip.png';
@@ -44,7 +47,11 @@ import PartaiPkb from '../static/logo-pkb.png';
 import PartaiPkpi from '../static/logo-pkpi.jpg';
 import PartaiPsi from '../static/logo-psi.png';
 
-
+// Menu
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
+import FacebookIcon from '@material-ui/icons/Facebook';	
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -66,8 +73,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage: 'radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,52,89,1) 0%, rgba(0,168,232,1) 90% );',
   },
   media: {
-    height: 0,
+    height: 120,
     paddingTop: '56.25%', // 16:9
+	objectPosition: 'top'
   },
   expand: {
     transform: 'rotate(0deg)',
@@ -98,6 +106,9 @@ const useStyles = makeStyles((theme) => ({
   	display: 'flex',
   	flexWrap: 'wrap',
   	justifyContent: 'center'
+  },
+  MenuShare: {
+  	background: 'transparent'
   }
 }));
 
@@ -114,8 +125,6 @@ const Paslon = () => {
   const [openKobulInfo, setOpenKobulInfo] = React.useState({
   	viis: false,
   	misi: false,
-  	strategi: false,
-  	agendaPembangunan: false
   });
 
   const handleSehatiInfoClick = (e) => {
@@ -162,18 +171,6 @@ const Paslon = () => {
 		    	misi: !openKobulInfo.misi,
 		    });
   			break;
-  		case "strategi":
-		    setOpenKobulInfo({
-		    	...openKobulInfo,
-		    	strategi: !openKobulInfo.strategi,
-		    });
-  			break;
-  		case "agendaPembangunan":
-		    setOpenKobulInfo({
-		    	...openKobulInfo,
-		    	agendaPembangunan: !openKobulInfo.agendaPembangunan,
-		    });
-  			break;
   		default:
   			break;	
   	}
@@ -187,11 +184,20 @@ const Paslon = () => {
     setExpandedKobul(!expandedKobul);
   };
   
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClickShare = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleCloseShare = () => {
+    setAnchorEl(null);
+  };  
   return (
   	<center>
     <Container className={classes.root}>
       <Grid className={classes.contentCenter} container>
-        <Grid className={classes.marginLeft} item xs={12} md={6} sm={6} xl={6} lg={6}>
+        <Grid className={classes.marginLeft} item xs={12} md={5} sm={5} xl={5} lg={5}>
 		  <Card className={classes.rootCard}> 
 		    <CardHeader
 		      avatar={
@@ -215,7 +221,18 @@ const Paslon = () => {
 		    </CardContent>
 		    <CardActions disableSpacing>
 		      <IconButton aria-label="share">
-		        <ShareIcon />
+		        <ShareIcon aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickShare} />
+			      <Menu
+			        id="simple-menu"
+			        anchorEl={anchorEl}
+			        keepMounted
+			        open={Boolean(anchorEl)}
+			        onClose={handleCloseShare}
+			        className={classes.MenuShare}
+			      >
+			        <MenuItem><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://sumba-timur-2k20-pilkada-tracking.netlify.app/" rel="noopener noreferrer" class="fb-xfbml-parse-ignore"><FacebookIcon /></a></MenuItem>
+			        <MenuItem><a target="_blank" href="whatsapp://send?text=Saya Pilih *Sehati*, Ayo Pantau Pilkada Sumba Timur Disini => https://sumba-timur-2k20-pilkada-tracking.netlify.app/" rel="noopener noreferrer" data-action="share/whatsapp/share"><WhatsAppIcon /></a></MenuItem>
+			      </Menu>
 		      </IconButton>
 		      <IconButton
 		        className={clsx(classes.expand, {
@@ -241,7 +258,7 @@ const Paslon = () => {
 			    >
 			      <ListItem button onClick={() => handleSehatiInfoClick('visi')}>
 			        <ListItemIcon>
-			          <InboxIcon />
+			          <HighlightOffIcon />
 			        </ListItemIcon>
 			        <ListItemText primary="VISI" />
 			        {openSehatiInfo.visi ? <ExpandLess /> : <ExpandMore />}
@@ -266,7 +283,7 @@ const Paslon = () => {
 
 			      <ListItem button onClick={() => handleSehatiInfoClick('misi')}>
 			        <ListItemIcon>
-			          <InboxIcon />
+			          <ListIcon />
 			        </ListItemIcon>
 			        <ListItemText primary="MISI" />
 			        {openSehatiInfo.misi ? <ExpandLess /> : <ExpandMore />}
@@ -294,7 +311,7 @@ const Paslon = () => {
 
 			      <ListItem button onClick={() => handleSehatiInfoClick('strategi')}>
 			        <ListItemIcon>
-			          <InboxIcon />
+			          <WbIncandescentIcon />
 			        </ListItemIcon>
 			        <ListItemText primary="STRATEGI" />
 			        {openSehatiInfo.strategi ? <ExpandLess /> : <ExpandMore />}
@@ -325,7 +342,7 @@ const Paslon = () => {
 
 			      <ListItem button onClick={() => handleSehatiInfoClick('agendaPembangunan')}>
 			        <ListItemIcon>
-			          <InboxIcon />
+			          <EventIcon />
 			        </ListItemIcon>
 			        <ListItemText primary="AGENDA PEMBANGUNAN" />
 			        {openSehatiInfo.agendaPembangunan ? <ExpandLess /> : <ExpandMore />}
@@ -367,10 +384,10 @@ const Paslon = () => {
 		    </Collapse>
 		  </Card>
        	</Grid>	
-        <Grid item>
+        <Grid item xs={12} md={2} sm={2} xl={2} lg={2}>
 	      <p className={PaslonClass.fontVS}>VS</p>
         </Grid>
-        <Grid item xs={12} md={6} sm={6} xl={4} lg={4}>
+        <Grid item xs={12} md={5} sm={5} xl={5} lg={5}>
 		  <Card className={classes.rootCard}>
 		    <CardHeader
 		      avatar={
@@ -394,7 +411,18 @@ const Paslon = () => {
 		    </CardContent>
 		    <CardActions disableSpacing>
 		      <IconButton aria-label="share">
-		        <ShareIcon />
+		        <ShareIcon aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickShare} />
+			      <Menu
+			        id="simple-menu"
+			        anchorEl={anchorEl}
+			        keepMounted
+			        open={Boolean(anchorEl)}
+			        onClose={handleCloseShare}
+			        className={classes.MenuShare}
+			      >
+			        <MenuItem><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/sharer/sharer.php?u=https://sumba-timur-2k20-pilkada-tracking.netlify.app/" class="fb-xfbml-parse-ignore"><FacebookIcon /></a></MenuItem>
+			        <MenuItem><a target="_blank" rel="noopener noreferrer" href="whatsapp://send?text=Saya Pilih *Kobul*, Ayo Pantau Pilkada Sumba Timur Disini => https://sumba-timur-2k20-pilkada-tracking.netlify.app/" data-action="share/whatsapp/share"><WhatsAppIcon /></a></MenuItem>
+			      </Menu>
 		      </IconButton>
 		      <IconButton
 		        className={clsx(classes.expand, {
@@ -420,7 +448,7 @@ const Paslon = () => {
 			    >
 			      <ListItem button onClick={() => handleKobulInfoClick('visi')}>
 			        <ListItemIcon>
-			          <InboxIcon />
+			          <HighlightOffIcon />
 			        </ListItemIcon>
 			        <ListItemText primary="VISI" />
 			        {openKobulInfo.visi ? <ExpandLess /> : <ExpandMore />}
@@ -428,24 +456,16 @@ const Paslon = () => {
 			      <Collapse in={openKobulInfo.visi} timeout="auto" unmountOnExit>
 			        <List component="div" disablePadding>
 			          <ListItem button className={classes.nested}>
-			          	<ol type="1">
-			          		<li>
-			          			<b>Sejahtera</b> merupakan suatu kondisi sosial, politik, ekonomi, dan budaya masyarkat yang produktif dan mampu memenuhi kebutuhan dasarnya secara layak dan berkelanjutan (life-sustaining basic human needs) dengan memanfaatkan potensi dan sumber daya lokal sebagai penggerak utama.
-			          		</li>
-			          		<li>
-			          			<b>Harmoni</b> mengandung makna keselarasan dalam seluruh aspek kehidupan bermasyarakat, berbangsa dan bernegara. Terwujudnya tatanan kehidupan yang demokratis, serasi dan selaras dengan nilai-nilai luhur dan karakter bangsa indonesia yang mengikat keutuhan dalam mozaik kebhinekaan.
-			          		</li>
-			          		<li>
-			          			<b>Tertib</b> menggambarkan kinerja berpemerintahan yang inklusif dan berkeadilan, berlansakan pada norma, kaidah dan hukum dalam mewujudkan stabilitas, pemerataan dan pembangunan berkelanjutan.
-			          		</li>
-			          	</ol>
+			          	<Typography paragraph>
+			          		Bersama Rakyat Mewujudkan Sumba Timur EMAS(Mandiri, Adil Dan Sejahtera) Berdasarkan Keunggulan Lokal Secara Berkelanjutan
+			          	</Typography>
 			          </ListItem>
 			        </List>
 			      </Collapse>
 
 			      <ListItem button onClick={() => handleKobulInfoClick('misi')}>
 			        <ListItemIcon>
-			          <InboxIcon />
+			          <ListIcon />
 			        </ListItemIcon>
 			        <ListItemText primary="MISI" />
 			        {openKobulInfo.misi ? <ExpandLess /> : <ExpandMore />}
@@ -455,78 +475,19 @@ const Paslon = () => {
 			          <ListItem button className={classes.nested}>
 			          	<ol type="1">
 			          		<li>
-			          			Meningkatkan kualitas Sumber Daya Manusia (SDM) dan produktivitas masyarkat, pemerintahan, dan dunia usaha dalam mengelola dan mengembangkan berbagai sumber daya ekonomi, sosial, politik dan budaya secara terpadu dan berkelanjutan sehingga mampu mandiri dan bermartabat
-			          			<p>Tujuan: Terwujudnya kemandirian masyarkat dan daerah yang berkelanjutan.</p>
+			          			Transformasi ekonomi Masyarakat yang berkualitas dan berdaya saing
 			          		</li>
 			          		<li>
-			          			Mewujudkan tatanan kehidupan bermasyarakat, berbangsa, dan bernegara yang demokratis dan berkarakter
-			          			<p>Tujuan: Terwujudnya keseimbangan dan harmonisasi kehidupan bermasyarakat, berbangsa, dan bernegara secara inklusif, berkeadilan, dan berkelanjutan.</p>
+			          			Transformasi Sumber Daya Manusia yang sehat dan cerdas
 			          		</li>
 			          		<li>
-			          			Meningkatkan kinerja pemerintah yang inklusif dan berkeadilan
-			          			<p>Tujuan: Terwujudnya ketertiban umum dan meningkatkannya kualitas penyelenggaraan pemerintahan, pembangunan, dan pelayanan publik.</p>
-			          		</li>
-			          	</ol>			            
-			          </ListItem>
-			        </List>
-			      </Collapse>
-
-			      <ListItem button onClick={() => handleKobulInfoClick('strategi')}>
-			        <ListItemIcon>
-			          <InboxIcon />
-			        </ListItemIcon>
-			        <ListItemText primary="STRATEGI" />
-			        {openKobulInfo.strategi ? <ExpandLess /> : <ExpandMore />}
-			      </ListItem>
-			      <Collapse in={openKobulInfo.strategi} timeout="auto" unmountOnExit>
-			        <List component="div" disablePadding>
-			          <ListItem button className={classes.nested}>
-			          	<ol type="1">
-			          	  	<li>
-			          	  	  	Peningkatan produktivitas sektor-sektor unggulan, yaitu pertanian, perikanan, dan peternakan terintegrasi pariwisata, dengan pemanfaatan IPTEK dan memperhatikan daya dukung lingkungan hidup
+			          			Transformasi pembangunan infrastuktur yang berkualitas merata dan ramah lingkungan
 			          		</li>
 			          		<li>
-			          			Pola kemitraan pemerintah, masyarkat, dan dunia usaha.
+			          			Transformasi Birokrasi merata yang profesional, efektif, demokratis, dan terpercaya
 			          		</li>
 			          		<li>
-			          			Pembangunan karakter dan etos kerja
-			          		</li>
-			          		<li>
-			          			Peningkatan akses masyarkat terhadap infrastuktur dasar
-			          		</li>
-			          		<li>
-			          			Peningkatan kualitas tata kelola pemerintahan
-			          		</li>
-			          	</ol>			            
-			          </ListItem>
-			        </List>
-			      </Collapse>
-
-			      <ListItem button onClick={() => handleKobulInfoClick('agendaPembangunan')}>
-			        <ListItemIcon>
-			          <InboxIcon />
-			        </ListItemIcon>
-			        <ListItemText primary="AGENDA PEMBANGUNAN" />
-			        {openKobulInfo.agendaPembangunan ? <ExpandLess /> : <ExpandMore />}
-			      </ListItem>
-			      <Collapse in={openKobulInfo.agendaPembangunan} timeout="auto" unmountOnExit>
-			        <List component="div" disablePadding>
-			          <ListItem button className={classes.nested}>
-			          	<ol type="1">
-			          	  	<li>
-			          	  	  	Pemberdayaan ekonomi kerakyatan.
-			          		</li>
-			          		<li>
-			          			Peningkatan kualitas Sumber Daya Manusia (SMD).
-			          		</li>
-			          		<li>
-			          			Penataan dan pengembangan infrastuktur dasar.
-			          		</li>
-			          		<li>
-			          			Reformasi birokrasi.
-			          		</li>
-			          		<li>
-			          			Penegakan hukum dan Hak Asasi Manusia (HAM).
+			          			Transformasi pengelolaan pariwisata secara fokus dan terintegrasi
 			          		</li>
 			          	</ol>			            
 			          </ListItem>

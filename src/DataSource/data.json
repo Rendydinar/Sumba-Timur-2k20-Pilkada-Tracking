@@ -1,70 +1,70 @@
 {
   "perkecamatan": [
     {
-      "name": "Kambera", "sehati": 4000, "kobul": 2400
+      "name": "Kambera", "sehati": 75000, "kobul": 75000
     },
     {
-      "name": "Kota Waingapu", "sehati": 4000, "kobul": 2400
+      "name": "Kota Waingapu", "sehati": 75000, "kobul": 75000
     },
     {
-      "name": "Haharu", "sehati": 4000, "kobul": 2400
+      "name": "Haharu", "sehati": 75000, "kobul": 75000
     },
     {
-      "name": "Lewa", "sehati": 4000, "kobul": 2400
+      "name": "Lewa", "sehati": 75000, "kobul": 75000
     },
     {
-      "name": "Nggaha Ori Angu", "sehati": 4000, "kobul": 2400
+      "name": "Nggaha Ori Angu", "sehati": 75000, "kobul": 75000
     },
     {
-      "name": "Tabundung", "sehati": 4000, "kobul": 2400
+      "name": "Tabundung", "sehati": 75000, "kobul": 75000
     },
     {
-      "name": "Pinu Pahar", "sehati": 4000, "kobul": 2400
+      "name": "Pinu Pahar", "sehati": 75000, "kobul": 75000
     },
     {
-      "name": "Pandawai", "sehati": 4000, "kobul": 2400
+      "name": "Pandawai", "sehati": 75000, "kobul": 75000
     },
     {
-      "name": "Umalulu", "sehati": 4000, "kobul": 2400
+      "name": "Umalulu", "sehati": 75000, "kobul": 75000
     },
     {
-      "name": "Rindi", "sehati": 4000, "kobul": 2400
+      "name": "Rindi", "sehati": 75000, "kobul": 75000
     },
     {
-      "name": "Pahunga Lodu", "sehati": 4000, "kobul": 2400
+      "name": "Pahunga Lodu", "sehati": 75000, "kobul": 75000
     },
     {
-      "name": "Wulla Waijelu", "sehati": 4000, "kobul": 2400
+      "name": "Wulla Waijelu", "sehati": 75000, "kobul": 75000
     },
     {
-      "name": "Paberiwai", "sehati": 4000, "kobul": 2400
+      "name": "Paberiwai", "sehati": 75000, "kobul": 75000
     },
     {
-      "name": "Karera", "sehati": 4000, "kobul": 2400
+      "name": "Karera", "sehati": 75000, "kobul": 75000
     },
     {
-      "name": "Kahaungu Eti", "sehati": 4000, "kobul": 2400
+      "name": "Kahaungu Eti", "sehati": 75000, "kobul": 75000
     },
     {
-      "name": "Matawai La Pawu", "sehati": 4000, "kobul": 2400
+      "name": "Matawai La Pawu", "sehati": 75000, "kobul": 75000
     },
     {
-      "name": "Kambata Mapambuhang", "sehati": 4000, "kobul": 2400
+      "name": "Kambata Mapambuhang", "sehati": 75000, "kobul": 75000
     },
     {
-      "name": "Lewa Tidahu", "sehati": 4000, "kobul": 2400
+      "name": "Lewa Tidahu", "sehati": 75000, "kobul": 75000
     },
     {
-      "name": "Katala Hamu Lingu", "sehati": 4000, "kobul": 2400
+      "name": "Katala Hamu Lingu", "sehati": 75000, "kobul": 75000
     },
     {
-      "name": "Kanatang", "sehati": 4000, "kobul": 2400
+      "name": "Kanatang", "sehati": 75000, "kobul": 75000
     },
     {
-      "name": "Ngadu Ngala", "sehati": 4000, "kobul": 2400
+      "name": "Ngadu Ngala", "sehati": 75000, "kobul": 75000
     },
     {
-      "name": "Mahu", "sehati": 4000, "kobul": 2400
+      "name": "Mahu", "sehati": 75000, "kobul": 75000
     }
   ],
   "totalPie" : [
@@ -73,17 +73,17 @@
       "value": 75000 
     },
     { "name": "Kobul", 
-      "value": 60000 
+      "value": 75000 
     }
   ],  
   "totalBartChart": [
     {
       "name": "Total Suara", 
-      "Sehati": 4000, 
-      "Kobul": 2400
+      "Sehati": 75000, 
+      "Kobul": 75000
     }
   ],
   "terkahirUpdate": {
-    "date": "Rabu 10:10 Am - WITA"
+    "date": "09/12 x:x Am - WITA"
   }
 }

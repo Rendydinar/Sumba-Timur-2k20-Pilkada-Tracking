@@ -4,9 +4,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.8;
+  opacity: .8;
   height: 100vh;
   justify-content: space-between;
+  font-weight: 100; /* 100, 200, 300, ... 900, normal, bold, bolder, lighter */
 }
 
 .landingContent {
@@ -14,6 +15,7 @@
 	flex-direction: column;
 	margin: auto;
 	width: 80%;
+  font-weight: bold;
   padding-top: 20%;
 	text-align: left;
 }
@@ -21,7 +23,7 @@
 .fontH2 {
   font-size: 2.5rem;
   font-weight: bold;
-  color: red;
+  color: #ef233c;
   z-index: 1;
   position: relative;
 }
@@ -29,13 +31,14 @@
 .fontH5 {
   margin-top: -30px;
   font-size: 1rem;
+  color: #ffd500;
+  font-weight: bold;
   position: relative;
   z-index: 1;
-  color: yellow;
 }
 
 .fontSection {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-top:5%;
   text-align: center;
 }
@@ -46,13 +49,15 @@
 
 .fontH2 {
   font-size: 3rem;
-  color: red;
+  color: #ef233c;
+  font-weight: bold;
 }
   
 .fontH5 {
   margin-top: -30px;
   font-size: 1rem;
-  color: yellow;
+  color: #FF51EB;
+  font-weight: bold;
 }
 
 }
@@ -65,13 +70,15 @@
 
 .fontH2 {
   font-size: 3rem;
-  color: red;
+  color: #ef233c;
+  font-weight: bold;
 }
   
 .fontH5 {
   margin-top: -30px;
   font-size: 1rem;
-  color: yellow;
+  color: #ffd500;
+  font-weight: bold;
 }
 
 }
@@ -80,12 +87,14 @@
 @media (min-width: 1200px) { 
   .fontH2 {
     font-size: 4rem;
-    color: red;
+    color: #ef233c;
+    font-weight: bold;
   }
     
   .fontH5 {
     margin-top: -30px;
     font-size: 2rem;
-    color: yellow;
+    color: #ffd500;
+    font-weight: bold;
   }
 }

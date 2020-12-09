@@ -84,9 +84,9 @@ const Header = () => {
           <IconButton edge="start" onClick={toggleDrawer('left', true)} className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" className={classes.title} color="inherit">
-            <Link to="/" style={{textDecoration: 'none', color: 'white'}}>Pilkada Sumba Timur 2k20 Tracking</Link>
-          </Typography>
+        <Typography variant="h6" className={classes.title, HeaderClasses.textHidden} color="inherit">
+          <Link to="/" style={{textDecoration: 'none', color: 'white', display:'hidden'}}>Pilkada Sumba Timur 2k20 Tracking</Link>
+        </Typography>
           <p className={HeaderClasses.blink}>
             Terakhir Kali Update: {DataSource.terkahirUpdate.date}
           </p>

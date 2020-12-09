@@ -10,8 +10,8 @@ const Perkecamatan = () => {
     <center className={classes.section}>
       <h4>Total Suara Per-Kecematan</h4>
       <BarChart
-        width={470}
-        height={400}
+        width={380}
+        height={380}
         data={DataSource.perkecamatan}
         margin={{
           top: 20, right: 30, bottom: 5,
@@ -22,7 +22,7 @@ const Perkecamatan = () => {
         <YAxis />
         <Tooltip />
         <Legend />
-        <Bar dataKey="sehati" stackId="a" fill="#0000FF" />
+        <Bar dataKey="sehati" stackId="a" fill="#FF0000" />
         <Bar dataKey="kobul" stackId="a" fill="#FFFF00" />
       </BarChart>
     </center>

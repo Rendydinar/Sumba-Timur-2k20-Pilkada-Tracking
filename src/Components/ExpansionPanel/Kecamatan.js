@@ -34,7 +34,7 @@ const Kecamatan = ({data}) => {
 	    <AccordionDetails>
 		  <List component="nav" aria-label="main mailbox folders">
 		    <ListItem button>
-		  	  <div style={{display: 'flex', alignItems: 'center', color: '#0000FF'}}>
+		  	  <div style={{display: 'flex', alignItems: 'center', color: '#FF0000'}}>
 		  	    <Avatar alt="Sehati" src={SehatiImg} style={{marginRight: '7px', marginLeft: '7px'}} />
 		  	    <b> <span style={{marginRight: '7px', marginLeft: '7px'}}> Sehati </span> : {data.sehati} Suara </b>
 		  	  </div> 
