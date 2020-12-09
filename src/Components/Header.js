@@ -5,8 +5,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Typography from '@material-ui/core/Typography';
-import Avatar from '@material-ui/core/Avatar';
-import Img from '../static/patung-kuda-waingapu.jpg'
+
+
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import Drawer from '@material-ui/core/Drawer';
