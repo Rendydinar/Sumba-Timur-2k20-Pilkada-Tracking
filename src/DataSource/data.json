@@ -31,7 +31,7 @@
       "name": "Rindi", "sehati": 1974, "kobul": 3963
     },
     {
-      "name": "Pahunga Lodu", "sehati": 0, "kobul": 0
+      "name": "Pahunga Lodu", "sehati": 3547, "kobul": 4420
     },
     {
       "name": "Wulla Waijelu", "sehati": 0, "kobul": 0
@@ -70,17 +70,17 @@
   "totalPie" : [
     { 
       "name": "Sehati", 
-      "value": 2788
+      "value": 6335
     },
     { "name": "Kobul", 
-      "value": 4482
+      "value": 8902
     }
   ],  
   "totalBartChart": [
     {
       "name": "Total Suara", 
-      "Sehati": 2788, 
-      "Kobul": 4482
+      "Sehati": 6335, 
+      "Kobul": 8902
     }
   ],
   "terkahirUpdate": {
