@@ -88,9 +88,9 @@ const Header = () => {
           <Link to="/" style={{textDecoration: 'none', color: 'white', display:'hidden'}}>Pilkada Sumba Timur 2k20 Tracking</Link>
         </Typography>
           <p className={HeaderClasses.blink}>
-            Terakhir Kali Update: {DataSource.terkahirUpdate.date}
+            Update Terakhir: {DataSource.terkahirUpdate.date}
           </p>
-          <Avatar src={Img}/>
+     
         </Toolbar>
       </AppBar>
       <Drawer anchor={'left'} open={state['left']} onClose={toggleDrawer('left', false)}>
