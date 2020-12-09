@@ -1,89 +1,89 @@
 {
   "perkecamatan": [
     {
-      "name": "Kambera", "sehati": 75000, "kobul": 75000
+      "name": "Kambera", "sehati": 0, "kobul": 0
     },
     {
-      "name": "Kota Waingapu", "sehati": 75000, "kobul": 75000
+      "name": "Kota Waingapu", "sehati": 292, "kobul": 278
     },
     {
-      "name": "Haharu", "sehati": 75000, "kobul": 75000
+      "name": "Haharu", "sehati": 0, "kobul": 0
     },
     {
-      "name": "Lewa", "sehati": 75000, "kobul": 75000
+      "name": "Lewa", "sehati": 0, "kobul": 0
     },
     {
-      "name": "Nggaha Ori Angu", "sehati": 75000, "kobul": 75000
+      "name": "Nggaha Ori Angu", "sehati": 0, "kobul": 0
     },
     {
-      "name": "Tabundung", "sehati": 75000, "kobul": 75000
+      "name": "Tabundung", "sehati": 0, "kobul": 0
     },
     {
-      "name": "Pinu Pahar", "sehati": 75000, "kobul": 75000
+      "name": "Pinu Pahar", "sehati": 0, "kobul": 0
     },
     {
-      "name": "Pandawai", "sehati": 75000, "kobul": 75000
+      "name": "Pandawai", "sehati": 0, "kobul": 0
     },
     {
-      "name": "Umalulu", "sehati": 75000, "kobul": 75000
+      "name": "Umalulu", "sehati": 0, "kobul": 0
     },
     {
-      "name": "Rindi", "sehati": 75000, "kobul": 75000
+      "name": "Rindi", "sehati": 0, "kobul": 0
     },
     {
-      "name": "Pahunga Lodu", "sehati": 75000, "kobul": 75000
+      "name": "Pahunga Lodu", "sehati": 0, "kobul": 0
     },
     {
-      "name": "Wulla Waijelu", "sehati": 75000, "kobul": 75000
+      "name": "Wulla Waijelu", "sehati": 0, "kobul": 0
     },
     {
-      "name": "Paberiwai", "sehati": 75000, "kobul": 75000
+      "name": "Paberiwai", "sehati": 0, "kobul": 0
     },
     {
-      "name": "Karera", "sehati": 75000, "kobul": 75000
+      "name": "Karera", "sehati": 0, "kobul": 0
     },
     {
-      "name": "Kahaungu Eti", "sehati": 75000, "kobul": 75000
+      "name": "Kahaungu Eti", "sehati": 0, "kobul": 0
     },
     {
-      "name": "Matawai La Pawu", "sehati": 75000, "kobul": 75000
+      "name": "Matawai La Pawu", "sehati": 0, "kobul": 0
     },
     {
-      "name": "Kambata Mapambuhang", "sehati": 75000, "kobul": 75000
+      "name": "Kambata Mapambuhang", "sehati": 0, "kobul": 0
     },
     {
-      "name": "Lewa Tidahu", "sehati": 75000, "kobul": 75000
+      "name": "Lewa Tidahu", "sehati": 0, "kobul": 0
     },
     {
-      "name": "Katala Hamu Lingu", "sehati": 75000, "kobul": 75000
+      "name": "Katala Hamu Lingu", "sehati": 0, "kobul": 0
     },
     {
-      "name": "Kanatang", "sehati": 75000, "kobul": 75000
+      "name": "Kanatang", "sehati": 522, "kobul": 241
     },
     {
-      "name": "Ngadu Ngala", "sehati": 75000, "kobul": 75000
+      "name": "Ngadu Ngala", "sehati": 0, "kobul": 0
     },
     {
-      "name": "Mahu", "sehati": 75000, "kobul": 75000
+      "name": "Mahu", "sehati": 0, "kobul": 0
     }
   ],
   "totalPie" : [
     { 
       "name": "Sehati", 
-      "value": 75000 
+      "value": 814
     },
     { "name": "Kobul", 
-      "value": 75000 
+      "value": 519
     }
   ],  
   "totalBartChart": [
     {
       "name": "Total Suara", 
-      "Sehati": 75000, 
-      "Kobul": 75000
+      "Sehati": 814, 
+      "Kobul": 519
     }
   ],
   "terkahirUpdate": {
-    "date": "09/12 x:x Am - WITA"
+    "date": "09/12 15:00 Pm - WITA"
   }
 }
