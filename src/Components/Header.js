@@ -5,6 +5,11 @@ import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Typography from '@material-ui/core/Typography';
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 199cd4a1ede6d3b07274fba7448b30dfc786c5de
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import Drawer from '@material-ui/core/Drawer';
@@ -83,11 +88,19 @@ const Header = () => {
             <MenuIcon />
           </IconButton>
         <Typography variant="h6" className={clsx(classes.title, HeaderClasses.textHidden)} color="inherit">
+<<<<<<< HEAD
           <Link to="/" style={{textDecoration: 'none', color: 'white'}}>Pilkada Sumba Timur 2k20 Tracking</Link>
+=======
+          <Link to="/" style={{textDecoration: 'none', color: 'white', display:'hidden'}}>Pilkada Sumba Timur 2k20 Tracking</Link>
+>>>>>>> 199cd4a1ede6d3b07274fba7448b30dfc786c5de
         </Typography>
           <p className={HeaderClasses.blink}>
-            Terakhir Kali Update: {DataSource.terkahirUpdate.date}
+            Update Terakhir: {DataSource.terkahirUpdate.date}
           </p>
+<<<<<<< HEAD
+=======
+     
+>>>>>>> 199cd4a1ede6d3b07274fba7448b30dfc786c5de
         </Toolbar>
       </AppBar>
       <Drawer anchor={'left'} open={state['left']} onClose={toggleDrawer('left', false)}>

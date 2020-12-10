@@ -10,8 +10,8 @@ const Perkecamatan = () => {
     <center className={classes.section}>
       <h4>Total Suara Per-Kecematan</h4>
       <BarChart
-        width={380}
-        height={380}
+        width={340}
+        height={340}
         data={DataSource.perkecamatan}
         margin={{
           top: 20, right: 30, bottom: 5,

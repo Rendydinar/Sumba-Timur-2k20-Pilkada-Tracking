@@ -25,7 +25,7 @@ const About = () => {
               <Typography variant="h6" paragraph align="justify">
                 <h4>Sumba Timur 2K20 Pilkada Tracking</h4>
                 Website Non-Official Yang Menampilkan Data Pemilihan Kepada Daerah Sumba Timur Periode 2021-2026.
-                Sumber Data Didapatkan Dari Beberapa Orang Yang Bekerja Di PAWANSLU (Pengawas Pemilihan Umum) Yang Sudah Menjalani Mitra Kerja.
+                Sumber Data Didapatkan Dari Beberapa Orang KPU Yang Sudah Menjalani Mitra Kerja.
                 Data Akan Diupdate Setiap 30 Menit.
               </Typography>
               <Typography variant="h6" paragraph align="justify">

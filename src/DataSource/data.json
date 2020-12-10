@@ -1,6 +1,7 @@
 {
   "perkecamatan": [
     {
+<<<<<<< HEAD
       "name": "Kambera", "sehati": 9915, "kobul": 4377
     },
     {
@@ -14,6 +15,21 @@
     },
     {
       "name": "Nggaha Ori Angu", "sehati": 163, "kobul": 28
+=======
+      "name": "Kambera", "sehati": 0, "kobul": 0
+    },
+    {
+      "name": "Kota Waingapu", "sehati": 292, "kobul": 278
+    },
+    {
+      "name": "Haharu", "sehati": 0, "kobul": 0
+    },
+    {
+      "name": "Lewa", "sehati": 0, "kobul": 0
+    },
+    {
+      "name": "Nggaha Ori Angu", "sehati": 0, "kobul": 0
+>>>>>>> 199cd4a1ede6d3b07274fba7448b30dfc786c5de
     },
     {
       "name": "Tabundung", "sehati": 0, "kobul": 0
@@ -22,10 +38,17 @@
       "name": "Pinu Pahar", "sehati": 0, "kobul": 0
     },
     {
+<<<<<<< HEAD
       "name": "Pandawai", "sehati": 3271, "kobul": 1740
     },
     {
       "name": "Umalulu", "sehati": 320, "kobul": 203
+=======
+      "name": "Pandawai", "sehati": 0, "kobul": 0
+    },
+    {
+      "name": "Umalulu", "sehati": 0, "kobul": 0
+>>>>>>> 199cd4a1ede6d3b07274fba7448b30dfc786c5de
     },
     {
       "name": "Rindi", "sehati": 1974, "kobul": 3963
@@ -34,6 +57,7 @@
       "name": "Pahunga Lodu", "sehati": 3547, "kobul": 4420
     },
     {
+<<<<<<< HEAD
       "name": "Wulla Waijelu", "sehati": 867, "kobul": 1017
     },
     {
@@ -53,6 +77,27 @@
     },
     {
       "name": "Lewa Tidahu", "sehati": 113, "kobul": 78
+=======
+      "name": "Wulla Waijelu", "sehati": 0, "kobul": 0
+    },
+    {
+      "name": "Paberiwai", "sehati": 0, "kobul": 0
+    },
+    {
+      "name": "Karera", "sehati": 0, "kobul": 0
+    },
+    {
+      "name": "Kahaungu Eti", "sehati": 0, "kobul": 0
+    },
+    {
+      "name": "Matawai La Pawu", "sehati": 0, "kobul": 0
+    },
+    {
+      "name": "Kambata Mapambuhang", "sehati": 0, "kobul": 0
+    },
+    {
+      "name": "Lewa Tidahu", "sehati": 0, "kobul": 0
+>>>>>>> 199cd4a1ede6d3b07274fba7448b30dfc786c5de
     },
     {
       "name": "Katala Hamu Lingu", "sehati": 0, "kobul": 0
@@ -70,6 +115,7 @@
   "totalPie" : [
     { 
       "name": "Sehati", 
+<<<<<<< HEAD
       "value": 0 
     },
     { "name": "Kobul", 
@@ -78,5 +124,22 @@
   ],  
   "terkahirUpdate": {
     "date": "10/12 14:36 Pm - WITA"
+=======
+      "value": 6335
+    },
+    { "name": "Kobul", 
+      "value": 8902
+    }
+  ],  
+  "totalBartChart": [
+    {
+      "name": "Total Suara", 
+      "Sehati": 6335, 
+      "Kobul": 8902
+    }
+  ],
+  "terkahirUpdate": {
+    "date": "09/12 18:19 Pm - WITA"
+>>>>>>> 199cd4a1ede6d3b07274fba7448b30dfc786c5de
   }
 }
