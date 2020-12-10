@@ -5,14 +5,24 @@ import {
 import classes from './Statistik.module.css';
 import DataSource from '../../DataSource/data';
 
+const totalSehati = DataSource.perkecamatan.reduce((a, b) => a + (b["sehati"] || 0), 0);
+const totalkobul = DataSource.perkecamatan.reduce((a, b) => a + (b["kobul"] || 0), 0);
+
+let totalBartChart = [{
+  name: "Total Suara",
+  Sehati: totalSehati,
+  Kobul: totalkobul
+}]
+
 const TotalBartChart = () => {  
+  console.log(totalSehati, ' ', totalkobul);
   return (
     <center className={classes.section}>
       <h4>Total Suara Seluruhnya</h4>
       <BarChart
         width={380}
         height={380}
-        data={DataSource.totalBartChart}
+        data={totalBartChart}
         margin={{
           top: 5, right: 30, bottom: 5,
         }}

@@ -5,8 +5,6 @@ import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Typography from '@material-ui/core/Typography';
-import Avatar from '@material-ui/core/Avatar';
-import Img from '../static/patung-kuda-waingapu.jpg'
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import Drawer from '@material-ui/core/Drawer';
@@ -84,13 +82,12 @@ const Header = () => {
           <IconButton edge="start" onClick={toggleDrawer('left', true)} className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton>
-        <Typography variant="h6" className={classes.title, HeaderClasses.textHidden} color="inherit">
-          <Link to="/" style={{textDecoration: 'none', color: 'white', display:'hidden'}}>Pilkada Sumba Timur 2k20 Tracking</Link>
+        <Typography variant="h6" className={clsx(classes.title, HeaderClasses.textHidden)} color="inherit">
+          <Link to="/" style={{textDecoration: 'none', color: 'white'}}>Pilkada Sumba Timur 2k20 Tracking</Link>
         </Typography>
           <p className={HeaderClasses.blink}>
             Terakhir Kali Update: {DataSource.terkahirUpdate.date}
           </p>
-          <Avatar src={Img}/>
         </Toolbar>
       </AppBar>
       <Drawer anchor={'left'} open={state['left']} onClose={toggleDrawer('left', false)}>

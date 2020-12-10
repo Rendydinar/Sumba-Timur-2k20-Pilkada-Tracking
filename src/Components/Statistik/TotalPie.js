@@ -7,6 +7,19 @@ import DataSource from '../../DataSource/data';
 
 const COLORS = ['#FF0000', '#FFFF00'];
 
+const totalSehati = DataSource.perkecamatan.reduce((a, b) => a + (b["sehati"] || 0), 0);
+const totalkobul = DataSource.perkecamatan.reduce((a, b) => a + (b["kobul"] || 0), 0);
+
+let totalPie = [
+  { 
+    name: "Sehati", 
+    value: totalSehati 
+  },
+  { name: "Kobul", 
+    value: totalkobul 
+  }
+]
+
 const RADIAN = Math.PI / 180;
 const renderCustomizedLabel = ({
   cx, cy, midAngle, innerRadius, outerRadius, percent, index,
@@ -28,7 +41,7 @@ const TotalPie = () => {
       <h4>Total Persen Suara</h4>
       <PieChart width={400} height={400}>
         <Pie
-          data={DataSource.totalPie}
+          data={totalPie}
           cx={200}
           cy={200}
           labelLine={false}
@@ -43,8 +56,8 @@ const TotalPie = () => {
         </Pie>
       </PieChart>
         <ul style={{  listStyle: 'none', fontWeight: 'bold', marginButtom: '50px'}}>
-          <li style={{color: '#FF0000'}}><span>Sehati:</span> {DataSource.totalPie[0].value} Suara</li>
-          <li style={{color: '#FFFF00'}}><span>Kobul:</span> {DataSource.totalPie[1].value} Suara</li>
+          <li style={{color: '#FF0000'}}><span>Sehati:</span> {totalSehati} Suara</li>
+          <li style={{color: '#FFFF00'}}><span>Kobul:</span> {totalkobul} Suara</li>
         </ul>
     </center>
   );

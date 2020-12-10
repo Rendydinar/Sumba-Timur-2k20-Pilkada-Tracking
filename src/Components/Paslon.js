@@ -230,7 +230,7 @@ const Paslon = () => {
 			        onClose={handleCloseShare}
 			        className={classes.MenuShare}
 			      >
-			        <MenuItem><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://sumba-timur-2k20-pilkada-tracking.netlify.app/" rel="noopener noreferrer" class="fb-xfbml-parse-ignore"><FacebookIcon /></a></MenuItem>
+			        <MenuItem><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://sumba-timur-2k20-pilkada-tracking.netlify.app/" rel="noopener noreferrer" className="fb-xfbml-parse-ignore"><FacebookIcon /></a></MenuItem>
 			        <MenuItem><a target="_blank" href="whatsapp://send?text=Saya Pilih *Sehati*, Ayo Pantau Pilkada Sumba Timur Disini => https://sumba-timur-2k20-pilkada-tracking.netlify.app/" rel="noopener noreferrer" data-action="share/whatsapp/share"><WhatsAppIcon /></a></MenuItem>
 			      </Menu>
 		      </IconButton>
@@ -420,7 +420,7 @@ const Paslon = () => {
 			        onClose={handleCloseShare}
 			        className={classes.MenuShare}
 			      >
-			        <MenuItem><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/sharer/sharer.php?u=https://sumba-timur-2k20-pilkada-tracking.netlify.app/" class="fb-xfbml-parse-ignore"><FacebookIcon /></a></MenuItem>
+			        <MenuItem><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/sharer/sharer.php?u=https://sumba-timur-2k20-pilkada-tracking.netlify.app/" className="fb-xfbml-parse-ignore"><FacebookIcon /></a></MenuItem>
 			        <MenuItem><a target="_blank" rel="noopener noreferrer" href="whatsapp://send?text=Saya Pilih *Kobul*, Ayo Pantau Pilkada Sumba Timur Disini => https://sumba-timur-2k20-pilkada-tracking.netlify.app/" data-action="share/whatsapp/share"><WhatsAppIcon /></a></MenuItem>
 			      </Menu>
 		      </IconButton>
